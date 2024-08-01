@@ -9,6 +9,7 @@ mod mod3;
 mod mod4;
 mod mod5;
 mod mod6;
+mod mod7;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
@@ -19,6 +20,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     match args[1].trim() {
+        "7" => _ = mod7::nst_prime(10001),
         "6" => mod6::sum_square_difference(),
         "5" => mod5::smallest_multiple(),
         "4" => mod4::largest_palindrome_product(),

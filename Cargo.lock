@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "Euler-Project-Rust"
+name = "Project-Euler-Rust"
 version = "0.1.0"
