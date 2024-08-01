@@ -10,6 +10,7 @@ mod mod4;
 mod mod5;
 mod mod6;
 mod mod7;
+mod mod8;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
@@ -20,6 +21,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     match args[1].trim() {
+        "8" => mod8::largest_product_in_a_series(),
         "7" => _ = mod7::nst_prime(10001),
         "6" => mod6::sum_square_difference(),
         "5" => mod5::smallest_multiple(),
